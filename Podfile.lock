@@ -1,20 +1,28 @@
 PODS:
   - Fakery (3.4.0)
   - InitialsImageView (0.4.0)
+  - MessageInputBar/Core (0.4.1)
+  - MessageKit (2.0.0):
+    - MessageInputBar/Core
 
 DEPENDENCIES:
   - Fakery (= 3.4.0)
   - InitialsImageView (= 0.4.0)
+  - MessageKit (= 2.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Fakery
     - InitialsImageView
+    - MessageInputBar
+    - MessageKit
 
 SPEC CHECKSUMS:
   Fakery: 885e894a3e7c392e1da96c6e46a1abe5a0b28686
   InitialsImageView: bea137b6281b3a82ccef09327986ec78a1a0da37
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  MessageKit: 29c1c87e5a396d2ca7a3f712e5171dc9aba42a1e
 
-PODFILE CHECKSUM: 47b8295ea79d7cad0a2d06338d75ff05a9489839
+PODFILE CHECKSUM: d47b98b42787082d54c90655b4b8f0fe770d00ee
 
 COCOAPODS: 1.5.3

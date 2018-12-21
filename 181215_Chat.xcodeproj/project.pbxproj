@@ -21,6 +21,7 @@
 		607A2C4221C5401600EA8EA4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607A2C4121C5401600EA8EA4 /* User.swift */; };
 		607A2C4621C5404000EA8EA4 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607A2C4521C5404000EA8EA4 /* Chat.swift */; };
 		607A2C4821C5406500EA8EA4 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607A2C4721C5406500EA8EA4 /* UserMessage.swift */; };
+		60AF05F121CD132B00D006B3 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF05F021CD132B00D006B3 /* MessageViewController.swift */; };
 		BD6DF80CC843EC8531416E62 /* Pods_181215_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD733161E7BAB2493C638B2 /* Pods_181215_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		607A2C4121C5401600EA8EA4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		607A2C4521C5404000EA8EA4 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		607A2C4721C5406500EA8EA4 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
+		60AF05F021CD132B00D006B3 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		7A0B769CC936EC255301BFDD /* Pods-181215_Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-181215_Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-181215_Chat/Pods-181215_Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		C13D66840BEC1B6CEC0B97D9 /* Pods-181215_Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-181215_Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-181215_Chat/Pods-181215_Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				60719E6221C553EC004494A6 /* ChatTableViewCell.swift */,
 				60719E6321C553EC004494A6 /* ChatTableViewCell.xib */,
 				60719E6621C55B9F004494A6 /* ChatTableViewCellModel.swift */,
+				60AF05F021CD132B00D006B3 /* MessageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +330,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-181215_Chat/Pods-181215_Chat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/InitialsImageView/InitialsImageView.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -334,6 +339,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InitialsImageView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607A2C1521C53F8F00EA8EA4 /* ViewController.swift in Sources */,
+				60AF05F121CD132B00D006B3 /* MessageViewController.swift in Sources */,
 				607A2C4821C5406500EA8EA4 /* UserMessage.swift in Sources */,
 				607A2C4621C5404000EA8EA4 /* Chat.swift in Sources */,
 				60719E6721C55B9F004494A6 /* ChatTableViewCellModel.swift in Sources */,

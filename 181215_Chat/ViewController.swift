@@ -66,8 +66,20 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToChat", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
-        let chat = dataSource[indexPath.row]
-        print("выбранный чат - \(chat.prettyDescription)") //точка входа на другой экран
+    }
+}
+
+// MARK: - Prepare for segue
+
+extension ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToChat" {
+            guard let rowIndex = tableView.indexPathForSelectedRow?.row else {
+                return
+            }
+            (segue.destination as! MessageViewController).chat = dataSource[rowIndex]
+        }
     }
 }
