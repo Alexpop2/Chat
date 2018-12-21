@@ -30,7 +30,18 @@ extension Chat: ChatTableViewCellModel {
     // TODO: - Сконвертировать в нормальный формат
     
     var lastMessageDatePrettyPrinted: String {
-        return messages.last?.date.description ?? ""
+        guard let messageDate = messages.last?.date else {
+            return ""
+        }
+        let dateFormatter = DateFormatter()
+        if(Calendar.current.isDateInToday(messageDate)) {
+            dateFormatter.dateFormat = "HH:mm"
+        }
+        else {
+            dateFormatter.dateFormat = "dd.MM"
+        }
+    
+        return dateFormatter.string(from: messageDate)
     }
     
     
