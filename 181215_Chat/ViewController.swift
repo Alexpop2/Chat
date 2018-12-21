@@ -50,8 +50,9 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: kChatTableViewCellReuseIdentifier,
-                                                       for: indexPath) as? ChatTableViewCell else {
+        guard let cell =
+            tableView.dequeueReusableCell(withIdentifier: kChatTableViewCellReuseIdentifier,
+                                          for: indexPath) as? ChatTableViewCell else {
             return UITableViewCell()
         }
         cell.viewModel = dataSource[indexPath.row]
