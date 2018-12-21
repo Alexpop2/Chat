@@ -11,7 +11,7 @@ import Foundation
 struct Chat {
     let id: Int
     let user: User
-    let messages: [UserMessage]
+    var messages: [UserMessage]
     
     var prettyDescription: String {
         return user.name + " " + (messages.last?.text ?? "")

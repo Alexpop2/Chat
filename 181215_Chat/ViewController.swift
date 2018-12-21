@@ -80,6 +80,21 @@ extension ViewController {
                 return
             }
             (segue.destination as! MessageViewController).chat = dataSource[rowIndex]
+            (segue.destination as! MessageViewController).delegate = self
         }
+    }
+}
+
+// MARK: - Update Chat
+
+extension ViewController: MessageViewControllerDelegate {
+    func updateChat(chat: Chat) {
+        guard let chatIndex = dataSource.firstIndex( where: {$0.id == chat.id} ) else {
+            return
+        }
+        dataSource.remove(at: chatIndex)
+        dataSource.append(chat)
+        dataSource.sort { $0.messages.last?.date ?? Date() > $1.messages.last?.date ?? Date() }
+        tableView.reloadData()
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60614C0221CD48A400549531 /* MessageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60614C0121CD48A400549531 /* MessageViewControllerDelegate.swift */; };
 		60719E6021C546F0004494A6 /* ChatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60719E5F21C546F0004494A6 /* ChatFactory.swift */; };
 		60719E6421C553EC004494A6 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60719E6221C553EC004494A6 /* ChatTableViewCell.swift */; };
 		60719E6521C553EC004494A6 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60719E6321C553EC004494A6 /* ChatTableViewCell.xib */; };
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		4CD733161E7BAB2493C638B2 /* Pods_181215_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_181215_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60614C0121CD48A400549531 /* MessageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		60719E5F21C546F0004494A6 /* ChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFactory.swift; sourceTree = "<group>"; };
 		60719E6221C553EC004494A6 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		60719E6321C553EC004494A6 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				60719E6321C553EC004494A6 /* ChatTableViewCell.xib */,
 				60719E6621C55B9F004494A6 /* ChatTableViewCellModel.swift */,
 				60AF05F021CD132B00D006B3 /* MessageViewController.swift */,
+				60614C0121CD48A400549531 /* MessageViewControllerDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				607A2C4821C5406500EA8EA4 /* UserMessage.swift in Sources */,
 				607A2C4621C5404000EA8EA4 /* Chat.swift in Sources */,
 				60719E6721C55B9F004494A6 /* ChatTableViewCellModel.swift in Sources */,
+				60614C0221CD48A400549531 /* MessageViewControllerDelegate.swift in Sources */,
 				607A2C1321C53F8F00EA8EA4 /* AppDelegate.swift in Sources */,
 				60719E6421C553EC004494A6 /* ChatTableViewCell.swift in Sources */,
 				60719E6021C546F0004494A6 /* ChatFactory.swift in Sources */,
