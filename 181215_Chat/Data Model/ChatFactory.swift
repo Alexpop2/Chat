@@ -20,7 +20,7 @@ class ChatFactory {
             let chat = Chat(id: faker.number.randomInt(), user: user, messages: messages)
             outArray.append(chat)
         }
-        outArray.sort { $0.messages.last?.date ?? Date() < $1.messages.last?.date ?? Date() }
+        outArray.sort { $0.messages.last?.date ?? Date() > $1.messages.last?.date ?? Date() }
         return outArray
     }
     
